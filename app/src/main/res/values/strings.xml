@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Banco Online</string>
+    <string name="mail">CorreoElectronico</string>
+    <string name="CUIT">CUIT/CUIL</string>
+    <string name="Moneda">Moneda</string>
+    <string name="Dolares">US$</string>
+    <string name="Pesos">AR$</string>
+    <string name="monto">Monto a Invertir</string>
+    <string name="Dias">Dias de Inversion</string>
+    <string name="AvisoPorMail">Avisar por mail antes del vencimiento</string>
+    <string name="Rendimiento">RendimientoInversion</string>
+    <string name="btnAcreditarCuenta">BotonAcreditarCuenta</string>
+    <string name="btnPlazoFijo">Hacer Plazo Fijo</string>
+    <string name="checkboxTerminosYCondiciones">Acepta Terminos y Condiciones</string>
+    <string name="lblAccionVencimientoRenovar">Renueva Vencimiento</string>
+    <string name="lblAccionVencimientoAcreditar">Acreditar Vencimiento</string>
+</resources>

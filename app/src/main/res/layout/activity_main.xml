@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/cuit-cuil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CUIT" />
+
+    <EditText
+        android:id="@+id/CUIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/moneda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Moneda" />
+
+    <RadioGroup
+        android:id="@+id/grupoRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/dolares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Dolares" />
+
+        <RadioButton
+            android:id="@+id/pesos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Pesos" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/monto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/monto" />
+
+    <EditText
+        android:id="@+id/montoAInvertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/dias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Dias" />
+
+    <SeekBar
+        android:id="@+id/diasDeInversion"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min ="10"
+        android:max="180"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/diasSeleccionados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/interesesGanados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ToggleButton
+        android:id="@+id/botonAccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAcreditarCuenta"
+        android:textOn="@string/lblAccionVencimientoRenovar"
+        android:textOff="@string/lblAccionVencimientoAcreditar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/avisoXMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/AvisoPorMail" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxtermino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkboxTerminosYCondiciones" />
+
+    <Button
+        android:id="@+id/botonPlazoFijo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnPlazoFijo" />
+
+    <TextView
+        android:id="@+id/mensajeResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLines="6"/>
+
+</LinearLayout>
